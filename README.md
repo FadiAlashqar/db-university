@@ -6,4 +6,9 @@ Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file tx
 <!-- TASK 1 -->
 SELECT *
 FROM `students`
-WHERE `date_of_birth` LIKE '1990-%'
+WHERE `date_of_birth` LIKE '1990-%';
+
+<!-- TASK 2 -->
+SELECT *
+FROM `courses`
+WHERE `cfu` > 10;
