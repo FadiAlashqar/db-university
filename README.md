@@ -38,3 +38,8 @@ WHERE `level` LIKE "magistrale";
 <!-- TASK 7 -->
 SELECT COUNT(`id`) AS `total_departments`
 FROM `departments`;
+
+<!-- TASK 8 -->
+SELECT COUNT(*) AS `teachers_without_number`
+FROM `teachers`
+WHERE `phone` IS NULL;
