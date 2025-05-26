@@ -29,3 +29,8 @@ SELECT *
 FROM `exams`
 WHERE `date` LIKE "2020-06-20"
 AND `hour` >= "14:00:00";
+
+<!-- TASK 6 -->
+SELECT *
+FROM `degrees`
+WHERE `level` LIKE "magistrale";
