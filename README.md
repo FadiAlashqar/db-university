@@ -34,3 +34,7 @@ AND `hour` >= "14:00:00";
 SELECT *
 FROM `degrees`
 WHERE `level` LIKE "magistrale";
+
+<!-- TASK 7 -->
+SELECT COUNT(`id`) AS `total_departments`
+FROM `departments`;
