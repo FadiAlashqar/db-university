@@ -17,3 +17,9 @@ WHERE `cfu` > 10;
 SELECT *
 FROM `students`
 WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30;
+
+<!-- TASK 4 -->
+SELECT *
+FROM `courses`
+WHERE `period` LIKE "I semestre"
+AND `year` LIKE 1;
