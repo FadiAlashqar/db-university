@@ -65,3 +65,12 @@ WHERE `phone` IS NULL;
   ON `departments`.`id` = `degrees`.`department_id`
   WHERE `degrees`.`level` = "magistrale"
   AND `departments`.`name` = "Dipartimento di Neuroscienze";
+
+  <!-- TASK 3 -->
+  SELECT * 
+  FROM `courses`
+  JOIN `course_teacher` 
+  ON `courses`.`id` = `course_teacher`.`course_id`
+  JOIN `teachers`
+  ON `course_teacher`.`teacher_id` = `teachers`.`id`
+  WHERE `teachers`.`id` = 44;
