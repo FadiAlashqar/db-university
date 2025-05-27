@@ -43,3 +43,17 @@ FROM `departments`;
 SELECT COUNT(*) AS `teachers_without_number`
 FROM `teachers`
 WHERE `phone` IS NULL;
+
+
+<!-- @qui Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate un secondo file nella stessa repo di ieri (db-university) con le query di oggi.
+2 file
+  -->
+
+  QUERY CON JOIN:
+
+  <!-- TASK 1 -->
+  SELECT *
+  FROM `students`
+  JOIN `degrees`
+  ON `students`.`degree_id` = `degrees`.id
+  WHERE `degrees`.`name` = "Corso di Laurea in Economia";
