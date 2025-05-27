@@ -57,3 +57,11 @@ WHERE `phone` IS NULL;
   JOIN `degrees`
   ON `students`.`degree_id` = `degrees`.id
   WHERE `degrees`.`name` = "Corso di Laurea in Economia";
+
+  <!-- TASK 2 -->
+  SELECT * 
+  FROM `degrees`
+  JOIN `departments`
+  ON `departments`.`id` = `degrees`.`department_id`
+  WHERE `degrees`.`level` = "magistrale"
+  AND `departments`.`name` = "Dipartimento di Neuroscienze";
