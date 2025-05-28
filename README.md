@@ -86,3 +86,17 @@ WHERE `phone` IS NULL;
   JOIN `departments`
   ON `departments`.`id` = `degrees`.`department_id`
   ORDER BY `students`.`surname` ASC, `students`.`name` ASC;
+
+  <!-- TASK 5 -->
+  SELECT `degrees`.`name` AS `corso_di_laurea`,
+  `courses`.`name` AS `corsi`,
+  `teachers`.`surname` AS `cognome`,
+  `teachers`.`name` AS `nome`
+  FROM `degrees`
+  JOIN `courses`
+  ON `degrees`.`id` = `courses`.`degree_id`
+  JOIN `course_teacher`
+  ON `courses`.`id` = `course_teacher`.`course_id`
+  JOIN `teachers`
+  ON `course_teacher`.`teacher_id` = `teachers`.`id`;
+
