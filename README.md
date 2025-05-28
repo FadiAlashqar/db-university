@@ -100,3 +100,18 @@ WHERE `phone` IS NULL;
   JOIN `teachers`
   ON `course_teacher`.`teacher_id` = `teachers`.`id`;
 
+  <!-- TASK 6 -->
+  SELECT `teachers`.`surname` AS `cognome`,
+  `teachers`.`name` AS `nome`,
+  `departments`.`name` AS `dipartimento`
+  FROM `departments`
+  JOIN `degrees`
+  ON `departments`.`id` = `degrees`.`department_id`
+  JOIN `courses`
+  ON `degrees`.`id` = `courses`.`degree_id`
+  JOIN `course_teacher`
+  ON `courses`.`id` = `course_teacher`.`course_id`
+  JOIN `teachers`
+  ON `course_teacher`.`teacher_id` = `teachers`.`id`
+  WHERE `departments`.`id` = 5;
+
