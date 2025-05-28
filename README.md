@@ -123,4 +123,10 @@ WHERE `phone` IS NULL;
   FROM `students`
   GROUP BY YEAR(`students`.`enrolment_date`);
 
+  <!-- TASK 3 -->
+  SELECT `exam_student`.`student_id`AS `studenti`,
+  AVG (`vote`) AS `media_voti`
+  FROM `exam_student`
+  GROUP BY `student_id`;
+
 
