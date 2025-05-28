@@ -115,3 +115,12 @@ WHERE `phone` IS NULL;
   ON `course_teacher`.`teacher_id` = `teachers`.`id`
   WHERE `departments`.`id` = 5;
 
+  
+  QUERY CON GROUP BY
+
+  <!-- TASK 1 -->
+  SELECT COUNT(*) AS `iscritti`, YEAR(`enrolment_date`) AS `anno`
+  FROM `students`
+  GROUP BY YEAR(`students`.`enrolment_date`);
+
+
