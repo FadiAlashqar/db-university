@@ -129,4 +129,9 @@ WHERE `phone` IS NULL;
   FROM `exam_student`
   GROUP BY `student_id`;
 
+  <!-- TASK 4 -->
+  SELECT COUNT(`degrees`.`name`) AS  `corsi_di_laurea`, `degrees`.`department_id` AS `id_dipartimento`
+  FROM `degrees`
+  GROUP BY `department_id`;
+
 
